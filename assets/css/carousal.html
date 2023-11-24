@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  animation: slide 7s infinite;
+}
+
+.carousel-text {
+  min-width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size:30px
+  
+}
+.carousel-slide :hover{
+  background-color: #ed3c0d;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  33.33% {
+      transform: translateX(-100%);
+  }
+  66.66% {
+      transform: translateX(-200%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+</style>
+<body>
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <div class="carousel-text">WEB DEVELOPER </div>
+            <div class="carousel-text">FULL STACK DEVELOPER</div>
+            <div class="carousel-text">WEB DESIGN</div>
+        </div>
+    
+</body>
+</html>
